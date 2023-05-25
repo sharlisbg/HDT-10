@@ -62,7 +62,8 @@ public class Principal {
             System.out.println(part);
         }*/
 
-        // llenamos la matriz de pesos en tiempo normal
+        // llenamos la matriz de pesos en tiempo NORMAL
+        System.out.println("NORMAL");
         tiemponormal[0][1] = Integer.parseInt(partsList.get(2));
         tiemponormal[0][3] = 1000000;
         tiemponormal[0][2] = Integer.parseInt(partsList.get(8));
@@ -76,11 +77,11 @@ public class Principal {
         tiemponormal[3][1] = 1000000;
         tiemponormal[3][2] = 1000000;
 
-        // llenamos la matriz de recorridos
+        // llenamos la matriz de recorridos para tiempo NORMAL
        
         String[][] matrizrecorridosnormal = {{"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}};
         
-        // Print the resulting array
+        /*// Print the resulting array
         for (int i = 0; i < tiemponormal.length; i++) {
             for (int j = 0; j < tiemponormal[i].length; j++) {
                 System.out.print(tiemponormal[i][j] + " ");
@@ -93,6 +94,111 @@ public class Principal {
                 System.out.print(matrizrecorridosnormal[i][j] + " ");
             }
             System.out.println();
+        }*/
+
+         // llenamos la matriz de pesos en tiempo LLUVIOSO
+         System.out.println("LLUVIA");
+         tiempolluvia[0][1] = Integer.parseInt(partsList.get(3));
+         tiempolluvia[0][3] = 1000000;
+         tiempolluvia[0][2] = Integer.parseInt(partsList.get(9));
+         tiempolluvia[1][0] = 1000000;
+         tiempolluvia[1][2] = 1000000;
+         tiempolluvia[1][3] = 1000000;
+         tiempolluvia[2][0] = 1000000;
+         tiempolluvia[2][1] = 1000000;
+         tiempolluvia[2][3] = Integer.parseInt(partsList.get(15));
+         tiempolluvia[3][0] = 1000000;
+         tiempolluvia[3][1] = 1000000;
+         tiempolluvia[3][2] = 1000000;
+ 
+         // llenamos la matriz de recorridos para tiempo LLUVIOSO
+        
+         String[][] matrizrecorridoslluvia = {{"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}};
+         
+        /*  // Print the resulting array
+         for (int i = 0; i < tiemponormal.length; i++) {
+             for (int j = 0; j < tiempolluvia[i].length; j++) {
+                 System.out.print(tiempolluvia[i][j] + " ");
+             }
+             System.out.println();
+         }
+         
+         for (int i = 0; i < matrizrecorridoslluvia.length; i++) {
+             for (int j = 0; j < matrizrecorridoslluvia[i].length; j++) {
+                 System.out.print(matrizrecorridoslluvia[i][j] + " ");
+             }
+             System.out.println();
+         }*/
+
+         // llenamos la matriz de pesos en tiempo NIEVE
+         System.out.println("NIEVE");
+         tiemponieve[0][1] = Integer.parseInt(partsList.get(4));
+         tiemponieve[0][3] = 1000000;
+         tiemponieve[0][2] = Integer.parseInt(partsList.get(10));
+         tiemponieve[1][0] = 1000000;
+         tiemponieve[1][2] = 1000000;
+         tiemponieve[1][3] = 1000000;
+         tiemponieve[2][0] = 1000000;
+         tiemponieve[2][1] = 1000000;
+         tiemponieve[2][3] = Integer.parseInt(partsList.get(16));
+         tiemponieve[3][0] = 1000000;
+         tiemponieve[3][1] = 1000000;
+         tiemponieve[3][2] = 1000000;
+ 
+         // llenamos la matriz de recorridos para tiempo NIEVE
+        
+         String[][] matrizrecorridosnieve = {{"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}};
+         
+         /*// Print the resulting array
+         for (int i = 0; i < tiemponieve.length; i++) {
+             for (int j = 0; j < tiemponieve[i].length; j++) {
+                 System.out.print(tiemponieve[i][j] + " ");
+             }
+             System.out.println();
+         }
+         
+         for (int i = 0; i < matrizrecorridosnieve.length; i++) {
+             for (int j = 0; j < matrizrecorridosnieve[i].length; j++) {
+                 System.out.print(matrizrecorridosnieve[i][j] + " ");
+             }
+             System.out.println();
+         }*/
+
+         // llenamos la matriz de pesos en tiempo TORMENTA
+        System.out.println("TORMENTA");
+        tiempotormenta[0][1] = Integer.parseInt(partsList.get(5));
+        tiempotormenta[0][3] = 1000000;
+        tiempotormenta[0][2] = Integer.parseInt(partsList.get(11));
+        tiempotormenta[1][0] = 1000000;
+        tiempotormenta[1][2] = 1000000;
+        tiempotormenta[1][3] = 1000000;
+        tiempotormenta[2][0] = 1000000;
+        tiempotormenta[2][1] = 1000000;
+        tiempotormenta[2][3] = Integer.parseInt(partsList.get(17));
+        tiempotormenta[3][0] = 1000000;
+        tiempotormenta[3][1] = 1000000;
+        tiempotormenta[3][2] = 1000000;
+
+        // llenamos la matriz de recorridos para tiempo TORMENTA
+       
+        String[][] matrizrecorridostormenta = {{"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}, {"BuenosAires", "SaoPaulo", "Lima", "Quito"}};
+        
+       /*  // Print the resulting array
+        for (int i = 0; i < tiempotormenta.length; i++) {
+            for (int j = 0; j < tiempotormenta[i].length; j++) {
+                System.out.print(tiempotormenta[i][j] + " ");
+            }
+            System.out.println();
         }
+        
+        for (int i = 0; i < matrizrecorridostormenta.length; i++) {
+            for (int j = 0; j < matrizrecorridostormenta[i].length; j++) {
+                System.out.print(matrizrecorridostormenta[i][j] + " ");
+            }
+            System.out.println();
+        }*/
+
+
+         
     }
 }
