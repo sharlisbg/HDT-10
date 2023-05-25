@@ -83,7 +83,9 @@ public class FloydWarshall {
 		}
 	}
 
-
+	/**
+	 * Calcula el centro del grafo 
+	 */
     public void CalcularCentroGrafo() {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
