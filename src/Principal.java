@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import edu.uvg.graphs.FloydWarshall;
+//import edu.uvg.graphs.FloydWarshall;
 
 public class Principal {
     public static void main(String[] args) {
@@ -241,30 +241,120 @@ public class Principal {
                             System.out.print(FWrecorridosnormal[i][j] + " ");
                         }
                         System.out.println();
-
+                    }
 
                 } else {
-                    System.out.println("dos");
+                    FWnormal.CalcularCentroGrafo();
+
                 }
                 
             }
 
             if (opcionusuario == 2) {
-                // condiciones de lluvia
-                // creamos un objeto tipo FloyWarshall
+                // creamos un objeto de tipo flyod washall para condiciones lluvia
                 FloydWarshall FWlluvia = new FloydWarshall(tiempolluvia, matrizrecorridoslluvia, 4);
+                System.out.println("Ingrese una opcion");
+                System.out.println("1. Calcular ruta mas corta");
+                System.out.println("2. Calcular centro del grafo");
+                int seleccion;
+                seleccion = numero.nextInt();
+                if (seleccion==1) {
+                    FWlluvia.CalcularRutas();
+                    int[][] FWdistanciaslluvia = FWlluvia.getDistancias();
+                    String[][] FWrecorridoslluvia = FWlluvia.getRecorridos();
+
+                    System.out.println("Las distancias minimas son:");
+                    for (int i = 0; i < FWdistanciaslluvia.length; i++) {
+                        for (int j = 0; j < FWdistanciaslluvia[i].length; j++) {
+                            System.out.print(FWdistanciaslluvia[i][j] + " ");
+                        }
+                        System.out.println();
+                    }
+                    
+                    System.out.println("Los recorridos de las distancias minimas son:");
+                    for (int i = 0; i < FWrecorridoslluvia.length; i++) {
+                        for (int j = 0; j < FWrecorridoslluvia[i].length; j++) {
+                            System.out.print(FWrecorridoslluvia[i][j] + " ");
+                        }
+                        System.out.println();
+                    }
+
+                } else {
+                    FWlluvia.CalcularCentroGrafo();
+                    
+                }
             }
 
             if (opcionusuario == 3) {
                 // condiciones de tormenta
-                // creamos un objeto tipo FloyWarshall
-                FloydWarshall FWtormenta= new FloydWarshall(tiempotormenta, matrizrecorridostormenta, 4);
+                // creamos un objeto de tipo flyod washall para condiciones tormenta
+                FloydWarshall FWtormenta = new FloydWarshall(tiempotormenta, matrizrecorridostormenta, 4);
+                System.out.println("Ingrese una opcion");
+                System.out.println("1. Calcular ruta mas corta");
+                System.out.println("2. Calcular centro del grafo");
+                int seleccion;
+                seleccion = numero.nextInt();
+                if (seleccion==1) {
+                    FWtormenta.CalcularRutas();
+                    int[][] FWdistanciastormenta = FWtormenta.getDistancias();
+                    String[][] FWrecorridostormenta = FWtormenta.getRecorridos();
+
+                    System.out.println("Las distancias minimas son:");
+                    for (int i = 0; i < FWdistanciastormenta.length; i++) {
+                        for (int j = 0; j < FWdistanciastormenta[i].length; j++) {
+                            System.out.print(FWdistanciastormenta[i][j] + " ");
+                        }
+                        System.out.println();
+                    }
+                    
+                    System.out.println("Los recorridos de las distancias minimas son:");
+                    for (int i = 0; i < FWrecorridostormenta.length; i++) {
+                        for (int j = 0; j < FWrecorridostormenta[i].length; j++) {
+                            System.out.print(FWrecorridostormenta[i][j] + " ");
+                        }
+                        System.out.println();
+                    }
+
+                } else {
+                    FWtormenta.CalcularCentroGrafo();
+                    
+                }
             }
 
             if (opcionusuario == 3) {
                 // condiciones de nieve
-                // creamos un objeto tipo FloydWarshall
+                // creamos un objeto de tipo flyod washall para condiciones nieve
                 FloydWarshall FWnieve = new FloydWarshall(tiemponieve, matrizrecorridosnieve, 4);
+                System.out.println("Ingrese una opcion");
+                System.out.println("1. Calcular ruta mas corta");
+                System.out.println("2. Calcular centro del grafo");
+                int seleccion;
+                seleccion = numero.nextInt();
+                if (seleccion==1) {
+                    FWnieve.CalcularRutas();
+                    int[][] FWdistanciasnieve = FWnieve.getDistancias();
+                    String[][] FWrecorridosnieve = FWnieve.getRecorridos();
+
+                    System.out.println("Las distancias minimas son:");
+                    for (int i = 0; i < FWdistanciasnieve.length; i++) {
+                        for (int j = 0; j < FWdistanciasnieve[i].length; j++) {
+                            System.out.print(FWdistanciasnieve[i][j] + " ");
+                        }
+                        System.out.println();
+                    }
+                    
+                    System.out.println("Los recorridos de las distancias minimas son:");
+                    for (int i = 0; i < FWrecorridosnieve.length; i++) {
+                        for (int j = 0; j < FWrecorridosnieve[i].length; j++) {
+                            System.out.print(FWrecorridosnieve[i][j] + " ");
+                        }
+                        System.out.println();
+                    }
+
+                } else {
+                    FWnieve.CalcularCentroGrafo();
+                    
+                }
             }
         }
 
