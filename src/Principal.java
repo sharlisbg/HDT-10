@@ -63,7 +63,7 @@ public class Principal {
         }*/
 
         // llenamos la matriz de pesos en tiempo NORMAL
-        System.out.println("NORMAL");
+        //System.out.println("NORMAL");
         tiemponormal[0][1] = Integer.parseInt(partsList.get(2));
         tiemponormal[0][3] = 1000000;
         tiemponormal[0][2] = Integer.parseInt(partsList.get(8));
@@ -97,7 +97,7 @@ public class Principal {
         }*/
 
          // llenamos la matriz de pesos en tiempo LLUVIOSO
-         System.out.println("LLUVIA");
+         //System.out.println("LLUVIA");
          tiempolluvia[0][1] = Integer.parseInt(partsList.get(3));
          tiempolluvia[0][3] = 1000000;
          tiempolluvia[0][2] = Integer.parseInt(partsList.get(9));
@@ -131,7 +131,7 @@ public class Principal {
          }*/
 
          // llenamos la matriz de pesos en tiempo NIEVE
-         System.out.println("NIEVE");
+         //System.out.println("NIEVE");
          tiemponieve[0][1] = Integer.parseInt(partsList.get(4));
          tiemponieve[0][3] = 1000000;
          tiemponieve[0][2] = Integer.parseInt(partsList.get(10));
@@ -165,7 +165,7 @@ public class Principal {
          }*/
 
          // llenamos la matriz de pesos en tiempo TORMENTA
-        System.out.println("TORMENTA");
+        //System.out.println("TORMENTA");
         tiempotormenta[0][1] = Integer.parseInt(partsList.get(5));
         tiempotormenta[0][3] = 1000000;
         tiempotormenta[0][2] = Integer.parseInt(partsList.get(11));
@@ -198,7 +198,33 @@ public class Principal {
             System.out.println();
         }*/
 
+        int opcionusuario = 0;
+        System.out.println("Ingrese una opcion de condicion climatica");
+        System.out.println("1. Condiciones de tiempo normal");
+        System.out.println("2. Condiciones de tiempo lluvioso");
+        System.out.println("3. Condiciones de tormenta");
+        System.out.println("4. Condiciones de nieve");
+        System.out.println("5. Salir");
 
+        while (opcionusuario != 5) {
+            if (opcionusuario ==1) {
+                // condiciones normales
+            }
+
+            if (opcionusuario == 2) {
+                // condiciones de lluvia
+            }
+
+            if (opcionusuario == 3) {
+                // condiciones de tormenta
+            }
+
+            if (opcionusuario == 3) {
+                // condiciones de nieve
+            }
+        }
+
+        System.out.println("Usted ha elegido salir. Adios!");
          
     }
 }
