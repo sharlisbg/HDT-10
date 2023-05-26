@@ -9,6 +9,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import edu.uvg.graphs.FloydWarshall;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -205,22 +207,35 @@ public class Principal {
         System.out.println("3. Condiciones de tormenta");
         System.out.println("4. Condiciones de nieve");
         System.out.println("5. Salir");
+        
 
         while (opcionusuario != 5) {
             if (opcionusuario ==1) {
                 // condiciones normales
+                // creamos un objeto de tipo flyod washall para condiciones normales
+                FloydWarshall FWnormal = new FloydWarshall(tiemponormal, matrizrecorridosnormal, 4);
+                System.out.println("Ingrese una opcion");
+                System.out.println("1. Calcular ruta mas corta");
+                System.out.println("2. Calcular centro del grafo");
+                int seleccion;
             }
 
             if (opcionusuario == 2) {
                 // condiciones de lluvia
+                // creamos un objeto tipo FloyWarshall
+                FloydWarshall FWlluvia = new FloydWarshall(tiempolluvia, matrizrecorridoslluvia, 4);
             }
 
             if (opcionusuario == 3) {
                 // condiciones de tormenta
+                // creamos un objeto tipo FloyWarshall
+                FloydWarshall FWtormenta= new FloydWarshall(tiempotormenta, matrizrecorridostormenta, 4);
             }
 
             if (opcionusuario == 3) {
                 // condiciones de nieve
+                // creamos un objeto tipo FloydWarshall
+                FloydWarshall FWnieve = new FloydWarshall(tiemponieve, matrizrecorridosnieve, 4);
             }
         }
 
