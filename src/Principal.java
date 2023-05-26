@@ -8,6 +8,7 @@
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import edu.uvg.graphs.FloydWarshall;
 
@@ -23,6 +24,8 @@ public class Principal {
         int[][] tiemponieve =  new int[4][4];
   
         int[][] tiempotormenta =  new int[4][4];
+
+        Scanner numero = new Scanner(System.in);
 
        BufferedReader reader = null;
         ArrayList<String> partsList = new ArrayList<>();
@@ -207,7 +210,7 @@ public class Principal {
         System.out.println("3. Condiciones de tormenta");
         System.out.println("4. Condiciones de nieve");
         System.out.println("5. Salir");
-        
+        opcionusuario = numero.nextInt();
 
         while (opcionusuario != 5) {
             if (opcionusuario ==1) {
@@ -218,6 +221,32 @@ public class Principal {
                 System.out.println("1. Calcular ruta mas corta");
                 System.out.println("2. Calcular centro del grafo");
                 int seleccion;
+                seleccion = numero.nextInt();
+                if (seleccion==1) {
+                    FWnormal.CalcularRutas();
+                    int[][] FWdistanciasnormal = FWnormal.getDistancias();
+                    String[][] FWrecorridosnormal = FWnormal.getRecorridos();
+
+                    System.out.println("Las distancias minimas son:");
+                    for (int i = 0; i < FWdistanciasnormal.length; i++) {
+                        for (int j = 0; j < FWdistanciasnormal[i].length; j++) {
+                            System.out.print(FWdistanciasnormal[i][j] + " ");
+                        }
+                        System.out.println();
+                    }
+                    
+                    System.out.println("Los recorridos de las distancias minimas son:");
+                    for (int i = 0; i < FWrecorridosnormal.length; i++) {
+                        for (int j = 0; j < FWrecorridosnormal[i].length; j++) {
+                            System.out.print(FWrecorridosnormal[i][j] + " ");
+                        }
+                        System.out.println();
+
+
+                } else {
+                    System.out.println("dos");
+                }
+                
             }
 
             if (opcionusuario == 2) {
