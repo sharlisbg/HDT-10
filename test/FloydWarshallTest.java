@@ -4,14 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import edu.uvg.graphs.FloydWarshall;
 
-/**
- * 
- */
 
-/**
- * @author MAAG
- *
- */
 class FloydWarshallTest {
 
 	/**
