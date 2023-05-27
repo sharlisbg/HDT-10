@@ -6,15 +6,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.fail;
 
-import java.util.ArrayList;
-import java.util.PriorityQueue;
-import java.util.Vector;
-
 import org.junit.Test;
 
 import java.lang.Exception;
-
-import edu.uvg.graphs.FloydWarshall;
 
 
 class FloydWarshallTest {
