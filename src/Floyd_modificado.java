@@ -10,14 +10,14 @@
 
 import java.util.Arrays;
 
-public class FloydWarshall {
+public class Floyd_modificado {
 
     private int[][] distancias;
     private String[][] recorridos;
     private String[] vertices;
     private int SIZE;
 
-    public FloydWarshall(int[][] _distancias, String[][] _recorridos, int matriz_size) {
+    public Floyd_modificado(int[][] _distancias, String[][] _recorridos, int matriz_size) {
         SIZE = matriz_size;
         distancias = _distancias;
         recorridos = _recorridos;

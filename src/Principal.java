@@ -243,7 +243,8 @@ public class Principal {
                         System.out.println();
                     }
 
-                } else {
+                } 
+                else {
                     FWnormal.CalcularCentroGrafo();
 
                 }
