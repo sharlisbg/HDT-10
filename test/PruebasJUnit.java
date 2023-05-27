@@ -66,8 +66,10 @@ public class PruebasJUnit {
 
     @Test
     public void testRecalcularCentroGrafo() {
-        floydWarshall.recalcularCentroGrafo();
-        
+        floydWarshall.CalcularCentroGrafo();
+        String centroEsperado = "C"; // El centro del grafo esperado es el vértice C
+        String centroCalculado = floydWarshall.getVertices()[floydWarshall.getCentro()];
+        assertEquals(centroEsperado, centroCalculado);
     }
 
 
